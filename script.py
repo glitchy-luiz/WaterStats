@@ -1,3 +1,7 @@
+infos = ['ph', 'temp', 'sal']
+tratbaixo = ['utilize um elevador de ph na área', 'Retirar a vida marinha da área enquanto limpa os residuos de lixo na superficie da água', 'Adicione uma solução salina na água']
+tratalto = ['use a adição de um ácido fraco ou de um ácido forte diluído na água','Analise as correntes de água da área de acordo com a época do ano','adicione água salina magnetizada na área analisada']
+
 def verificarnum(numero):
     while not numero.isnumeric():
         numero = input('Diga um numero valido: ')
@@ -37,9 +41,6 @@ def verificaragua(ph,temp,sal):
 
     return [nivelph, niveltemp, nivelsal]
 
-infos = ['ph', 'temp', 'sal']
-tratbaixo = ['utilize um elevador de ph na área', 'Retirar a vida marinha da área enquanto limpa os residuos de lixo na superficie da água', 'Adicione uma solução salina na água']
-tratalto = ['use a adição de um ácido fraco ou de um ácido forte diluído na água','Analise as correntes de água da área de acordo com a época do ano','adicione água salina magnetizada na área analisada']
 def tratamento (lista):
     for i in range(len(lista)):
         if lista[i] == 'baixo':
@@ -70,8 +71,6 @@ def analisaragua ():
     if repeticao == 'sim':
         analisaragua()
 
-
-print('Bem-vindo ao   água!')
+print('Bem-vindo ao WaterStats!')
 analisaragua()
-
 print('Até mais')
